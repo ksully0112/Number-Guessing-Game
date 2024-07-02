@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 맞추기 게임</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>숫자 맞추기 게임</h1>
+    <p id="message">숫자를 맞추세요! 기회는 3번 있습니다.</p>
+    <div id="guessDiv">
+        <input type="number" id="guessInput" placeholder="숫자를 입력하세요">
+        <button id="guessButton" onclick="checkGuess()">입력</button>
+    </div>
+    <p id="previousGuesses">입력한 숫자들:</p>
+    <ul id="guessList"></ul>
+    <p id="remainingAttempts">남은 기회: <span id="attemptsLeft">3</span></p>
+    <button id="resetButton" onclick="resetGame()">게임 리셋</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
